@@ -1,0 +1,10 @@
+/* src/components/AboutButton.css */
+.about-button {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    /* margin-right: 300px; */
+  }
+  

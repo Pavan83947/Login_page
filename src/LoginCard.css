@@ -1,0 +1,164 @@
+.login-card {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), #102d44);
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 420px;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin: 20px 0;
+  align-self: flex-end;
+  height: auto;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-card label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.login-card input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.login-card input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox .toggle {
+  width: 30px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin-right: 8px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.custom-checkbox .toggle::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-color: #353333;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .toggle {
+  background-color: #fff;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .toggle::after {
+  transform: translateX(15px);
+}
+
+.forgot-password {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.forgot-password:hover {
+  color: #fff;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+    align-self: center;
+    margin: 20px auto;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+
+  .login-card p {
+    font-size: 14px;
+  }
+
+  .login-card input,
+  button {
+    font-size: 14px;
+  }
+}
+
+::placeholder {
+  color: rgb(205, 202, 202);
+}
+
+.login-card .error-message {
+  color: #c82222;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
